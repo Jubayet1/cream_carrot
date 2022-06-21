@@ -1,0 +1,13 @@
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    background-color: transparent;
+    font-family: "Teko", sans-serif;
+    font-size: 30px;
+    color: rgb(148, 115, 115);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
