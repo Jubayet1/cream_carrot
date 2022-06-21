@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/7V21WMp/dinner1.png",
+        "name": "Dinner Item 01",
+        "description": "How We Dream Our Future",
+        "price":"500"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/99N5yQK/dinner2.png",
+        "name": "Dinner Item 02",
+        "description": "How We Dream Our Future",
+        "price":"500"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/tK52rQk/dinner3.png",
+        "name": "Dinner Item 03",
+        "description": "How We Dream Our Future",
+        "price":"500"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/Yy1n3KR/dinner4.png",
+        "name": "Dinner Item 04",
+        "description": "How We Dream Our Future",
+        "price":"500"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/MnfCndK/dinner5.png",
+        "name": "Dinner Item 05",
+        "description": "How We Dream Our Future",
+        "price":"500"
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/sJJ5x76/dinner6.png",
+        "name": "Dinner Item 06",
+        "description": "How We Dream Our Future",
+        "price":"500"
+    }
+]
