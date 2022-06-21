@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext  } from "react";
 import Dish from "./Dish";
+import { BlogContext } from "../../App";
 
 const Items = () => {
+  const [blogs, setBlogs] = useContext(BlogContext);
   const [time, setTime] = useState("Breakfast");
   const [dishes, setDishes] = useState([]);
   useEffect(() => {
@@ -13,8 +15,10 @@ const Items = () => {
   useEffect(() => {
     fetch('AllData.json')
     .then((res) => res.json())
-    .then(data=>console.log(data))
+    .then(data=>setBlogs(data))
   }, [])
+
+  console.log(blogs)
   return (
     <div>
       <div className="flex flex-row justify-center pt-8">

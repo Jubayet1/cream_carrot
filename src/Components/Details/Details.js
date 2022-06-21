@@ -1,23 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import { BlogContext } from "../../App";
 
 const Details = () => {
-  const [allDishesh, setAllDishes] = useState([]);
+  const [blogs] = useContext(BlogContext);
 
-    useEffect(() => {
-      fetch(`AllData.json`)
-        .then((res) => res.json())
-        .then((data) => setAllDishes(data));
-    }, []);
-
-  console.log(allDishesh.length);
-  let { ProductKey } = useParams();
-  console.log(ProductKey);
+  let { Key } = useParams();
+  const blog = blogs.find((blog) => blog.productKey == Key);
+  console.log(blog);
   return (
     <div>
-      <p>this is details</p>
-      {allDishesh.length}
+      <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src={blog.img}
+            class="max-w-sm rounded-lg shadow-2xl"
+            alt="nothing"
+          />
+          <div>
+            <h1 class="text-5xl font-bold">{blog.name}</h1>
+            <p class="py-6">
+                {blog.description}
+            </p>
+            <button class="btn btn-primary">{blog.price}</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
