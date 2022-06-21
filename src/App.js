@@ -1,11 +1,16 @@
 import "./App.css";
 import Home from "./Components/Home/Home";
-import Navbar from "./Components/Home/Navbar";
+import { Routes, Route } from "react-router-dom";
+import Details from "./Components/Details/Details";
 
 function App() {
   return (
     <div>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/item/:ProductKey" element={<Details />} />
+        <Route />
+      </Routes>
     </div>
   );
 }

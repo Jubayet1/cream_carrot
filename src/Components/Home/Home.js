@@ -8,11 +8,11 @@ import Navbar from "./Navbar";
 const Home = () => {
   return (
     <div>
-        <Navbar />
-        <Banner />
-        <Items />
-        <About />
-        <Footer />
+      <Navbar />
+      <Banner />
+      <Items />
+      <About />
+      <Footer />
     </div>
   );
 };
